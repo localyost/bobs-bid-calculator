@@ -1,0 +1,8 @@
+<button mat-button color="primary" routerLink="/price-list/new">Create Price List</button>
+<br/>
+
+<mat-card *ngFor="let priceList of priceLists">
+  <a [routerLink]="['/price-list/'+priceList.title]">
+    {{priceList.title}}
+  </a>
+</mat-card>

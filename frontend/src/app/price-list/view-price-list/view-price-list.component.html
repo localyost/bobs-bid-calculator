@@ -1,0 +1,25 @@
+<ng-container *ngIf="priceList">
+  <h1> {{priceList.title}}</h1>
+
+  <mat-accordion>
+    <mat-expansion-panel hideToggle *ngFor="let listing of priceList.listings">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{listing.assortment}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <table mat-table [dataSource]="listing.catalogue" class="mat-elevation-z8">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+        <ng-container matColumnDef="price">
+          <th mat-header-cell *matHeaderCellDef> Price </th>
+          <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+</ng-container>
