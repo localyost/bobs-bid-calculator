@@ -1,0 +1,1 @@
+aws s3 cp .\src\test\resources\Material-4-18-22.xlsx s3://bob-bid-bucket/price-lists/
