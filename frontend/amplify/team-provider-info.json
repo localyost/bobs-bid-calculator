@@ -10,6 +10,11 @@
       "StackName": "amplify-bobsbidcalulatorweb-dev-181513",
       "StackId": "arn:aws:cloudformation:us-west-1:946382041416:stack/amplify-bobsbidcalulatorweb-dev-181513/38182280-4fc9-11ed-a800-0227cc7888ab",
       "AmplifyAppId": "d3v8zhx8n29siy"
+    },
+    "categories": {
+      "auth": {
+        "bobsbidcalulatorweb54a7a22d": {}
+      }
     }
   }
 }

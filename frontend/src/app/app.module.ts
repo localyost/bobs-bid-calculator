@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ComponentsModule} from "./components/components.module";
 import {BidsModule} from "./bids/bids.module";
 import {PriceListModule} from "./price-list/price-list.module";
+import {AmplifyAuthenticatorModule} from "@aws-amplify/ui-angular";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {PriceListModule} from "./price-list/price-list.module";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ComponentsModule
+    ComponentsModule,
+    AmplifyAuthenticatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
